@@ -35,4 +35,10 @@ public class CalculatorTest {
         int result = calculator.multiply(10, 2);
         assertEquals(20, result);
     }
+
+    @Test
+    public void testMultiply_WithZero() {
+        int result = calculator.multiply(0, 1);
+        assertEquals(0, result);
+    }
 }
